@@ -1,0 +1,8 @@
+Poniższe zamówienia oczekują w statusie ponad 24h:
+{% for item in items %}
+----------
+{{ items[item][0]['status_name'] }}:
+{% for order in items[item] %}
+{{ order['id'] }}: {{order['add_date']}} (Data złożenia zamówienia)
+{% endfor %}
+{% endfor %}

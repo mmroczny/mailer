@@ -1,0 +1,66 @@
+Uwaga! Poniższe zamówienia powinny zostać spakowane i wysłane jeszcze dzisiaj!
+
+Auto-Partner:
+
+Sklep:
+
+{% for item in ap['s'] %}
+
+        Baselinker ID:  {{ item['id'] }}
+        W statusie:     {{ item['status_date'] }}
+        Nr faktury:     {{ item['fv'] }}
+
+{% endfor %}
+
+Reklamacje:
+
+{% for item in ap['r'] %}
+
+    Baselinker ID:  {{ item['id'] }}
+    W statusie:     {{ item['status_date'] }}
+    Nr faktury:     {{ item['fv'] }}
+
+{% endfor %}
+
+Pozostałe:
+
+{% for item in ap['p'] %}
+
+    Baselinker ID:  {{ item['id'] }}
+    W statusie:     {{ item['status_date'] }}
+    Nr faktury:     {{ item['fv'] }}
+
+{% endfor %}
+----------------------------------------------------------
+Inter-Parts:
+
+Sklep:
+
+{% for item in ip['s'] %}
+
+    Baselinker ID:  {{ item['id'] }}
+    W statusie:     {{ item['status_date'] }}
+    Nr faktury:     {{ item['fv'] }}
+
+{% endfor %}
+
+Reklamacje:
+
+{% for item in ip['r'] %}
+
+    Baselinker ID:  {{ item['id'] }}
+    W statusie:     {{ item['status_date'] }}
+    Nr faktury:     {{ item['fv'] }}
+
+{% endfor %}
+
+Pozostałe:
+
+{% for item in ip['p'] %}
+
+    Baselinker ID:  {{ item['id'] }}
+    W statusie:     {{ item['status_date'] }}
+    Nr faktury:     {{ item['fv'] }}
+    
+{% endfor %}
+
